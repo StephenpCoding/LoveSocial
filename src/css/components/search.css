@@ -1,0 +1,24 @@
+/* --- Search --- */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+}
+
+.search-bar input[type="search"] {
+  /* 父亲的背景是白色，但是input不会继承。设置成透明就会显示父亲的颜色*/
+  background: transparent;
+  width: 30dvw;
+  max-width: 500px;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-black);
+}
+
+.search-bar input[type="search"]::placeholder {
+  color: var(--color-gray);
+  font-style: italic;
+}
